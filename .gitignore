@@ -5,3 +5,6 @@
 dist
 *.suo
 .setup-config
+.dist-buildwrapper
+cabal.sandbox.config
+.cabal-sandbox
