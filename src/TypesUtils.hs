@@ -1,3 +1,4 @@
+{-# LANGUAGE TypeSynonymInstances, FlexibleInstances #-}
 -----------------------------------------------------------------------------------------
 {-| Module      : Types
     Copyright   : 
@@ -11,9 +12,9 @@
 
 module TypesUtils where
 
-import System
-import Char
-import List
+import System.Exit
+import Data.Char
+import Data.List
 
 delimiterLine = "----- GENERATED PART STARTS HERE. DO NOT EDIT ON OR BEYOND THIS LINE -----"
 

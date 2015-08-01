@@ -11,7 +11,7 @@
 
 module Gen_DocTypes where
 
-import Char
+import Data.Char
 
 import TypesUtils
 

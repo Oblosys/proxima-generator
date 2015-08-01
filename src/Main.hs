@@ -8,8 +8,9 @@ import qualified Gen_ProxParser
 import qualified Gen_PresentationAG
 import qualified Gen_DocumentEdit
 
-import System
-import List
+import System.Environment
+import Control.Exception
+import Data.List
 
 {-
 
@@ -49,7 +50,7 @@ generateFile path fileName generatedLines =
     ; case removeGeneratedContent oldContents of
         Nothing -> stop ("File "++filePath++" should contain the following line:\n\n"++delimiterLine)
         Just nonGenerated -> writeFile filePath $ nonGenerated ++ unlines (delimiterLine : generatedLines)
-    } `catch` \err -> stop (show err)
+    } `catch` \err -> stop (show (err :: SomeException))
 
 removeGeneratedContent :: String -> Maybe String
 removeGeneratedContent content = 

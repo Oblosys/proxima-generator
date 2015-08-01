@@ -14,7 +14,7 @@ module Parser where
 import Text.ParserCombinators.Parsec
 import qualified Text.ParserCombinators.Parsec.Token as P
 import Text.ParserCombinators.Parsec.Language( haskellDef )
-import Char
+import Data.Char
 import Control.Monad (liftM)
 import qualified Data.Map as Map
 import Data.List ((\\), nub)

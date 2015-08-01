@@ -11,7 +11,7 @@
 
 module Gen_DocUtils where
 
-import List
+import Data.List
 
 import TypesUtils
 
