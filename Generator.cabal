@@ -5,7 +5,7 @@ license: AllRightsReserved
 copyright:
 maintainer:
 build-depends: base >=4.7 && <5.0,
-               parsec >=2.0 && <2.1,
+               parsec >=2.0 && <3.1,
                containers >= 0.5 && < 0.6
 stability:
 build-type: Simple
