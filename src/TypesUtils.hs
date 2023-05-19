@@ -127,7 +127,7 @@ genXPattern (Prod _ cnstrName idpFields fields) =
   "(%1%2%3)"
   <~ [ cnstrName
      , concat $ replicate (length idpFields) " _"
-     , prefixBy " x" $map show [0..length fields-1]
+     , prefixBy " x" $ map show [0..length fields-1]
      ]
 -- Generate a pattern with x parameters and i for idps. Eg. (Bin i0 x0 x1)     
 genIXPattern (Prod _ cnstrName idpFields fields) = 

@@ -1,10 +1,2 @@
-*.hi
-*.o
-*.exe
-*.bak
 dist
-*.suo
-.setup-config
-.dist-buildwrapper
-cabal.sandbox.config
-.cabal-sandbox
+dist-newstyle
